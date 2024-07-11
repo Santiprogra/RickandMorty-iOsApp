@@ -7,6 +7,7 @@
 
 import UIKit
 
+// Controller to house tabs and root tab controllers
 final class RMTabBarController: UITabBarController {
 
     override func viewDidLoad() {
@@ -14,6 +15,7 @@ final class RMTabBarController: UITabBarController {
         setUpTabs()
     }
 
+    //Creation a tab bar for 4 sections with your respective symbol
     private func setUpTabs() {
         let charactersVC = RMCharacterViewController()
         let locationsVC = RMLocationViewController()
@@ -41,5 +43,6 @@ final class RMTabBarController: UITabBarController {
 
         setViewControllers([nav1, nav2, nav3, nav4], animated: true)
     }
+    //Completion a tab bar for 4 sections with your respective symbol
 }
 
